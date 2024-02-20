@@ -1,0 +1,314 @@
+/* The body */
+/* Section 1: Opening */
+#Ball1 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: red;
+}
+
+#card {
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    z-index: 1;
+}
+
+/* Section 2: The Carp */
+#Ball2 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ff4500;
+}
+
+#sea {
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#redCarp {
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    cursor: pointer;
+}
+
+#carp {
+    position: fixed; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    display: none;
+    animation: swim 3s infinite;
+}
+
+/* Section 3: Spring */
+#Ball3 {
+    top: 20%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    background-color: #ffddf4;
+}
+
+#wSpring {
+    height:85%;
+    top: 0;
+    left: 45%;
+    z-index: 1;
+}
+
+#upperSpring {
+    top: 0;
+    height: auto;
+    width: 100%;
+    z-index: 3;
+} 
+
+#lowerSpring {
+    bottom: 0;
+    height: auto;
+    width: 100%;
+    z-index: 3;
+}
+
+#spring {
+    top: 40%;
+    left: 7%;
+    z-index: 2;
+}
+
+/* Section 4: Summer */
+#Ball4 {
+    top: 40%;
+    right: 30%;
+    transform: translate(-50%, -50%);
+    background-color: #d0f0c0;
+}
+
+#wSummer {
+    height:85%;
+    top: 0;
+    left: 18%;
+    z-index: 1;
+}
+
+#upperSummer {
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+}
+
+#lowerSummer {
+    bottom: 0;
+    height: auto;
+    width: 100%;
+    z-index: 3;
+}
+
+#summer {
+    top: 30%;
+    height: 65%;
+    right: 8%;
+    z-index: 2;
+}
+
+/* Section 5: Autumn */
+#Ball5 {
+    top: 60%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    background-color: #fada5e;
+}
+
+#wAutumn {
+    height:80%;
+    top: 0;
+    left: 45%;
+    z-index: 1;
+}
+
+#upperAutumn {
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+}
+
+#lowerAutumn {
+    bottom: 0;
+    height: auto;
+    width: 100%;
+    z-index: 3;
+}
+
+#autumn {
+    top: 30%;
+    height: 65%;
+    left: 10%;
+    z-index: 2;
+}
+
+/* Section 6: Winter */
+#Ball6 {
+    top: 80%;
+    right: 25%;
+    transform: translate(-50%, -50%);
+    background-color: #ace5ee;
+}
+
+#wWinter {
+    height:85%;
+    top: 0;
+    left: 11%;
+    z-index: 1;
+}
+
+#upperWinter {
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 3;
+}
+
+#lowerWinter {
+    bottom: 0;
+    height: auto;
+    width: 100%;
+    z-index: 3;
+}
+
+#winter {
+    top: 35%;
+    height: 60%;
+    right: 10%;
+    z-index: 2;
+}
+
+/* Section 7: Dragon Gate */
+#Ball7 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffdf00 ;
+}
+
+#wDragonGate {
+    top: 0;
+    left: 25%;
+    z-index: 1;
+}
+
+#dragonGate {
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+#bounceCarp {
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+/* Sextion 8: Dragon */
+#wDragon {
+    z-index: 1;
+}
+
+#Dragon1 {
+    right: 1%;
+    z-index: 2;
+}
+
+#Dragon2 {
+    top: 10%;
+    right: 8%;
+    z-index: 2;
+}
+
+#dragon {
+    z-index: 3;
+}
+
+#aCloud {
+    height: 100%;
+    overflow-y: hidden;
+    z-index: 5;
+    cursor: pointer;
+}
+
+/* Section 9: Share E-card */
+#Section9 {
+    background-image: url('CNY_Laptop/Card/cardBack.png');
+}
+
+#icon {
+    transform: translateX(-20%);
+}
+
+.container {
+    height: 80%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+} 
+
+.container h2 {
+    top: 15%;
+    color: white;
+    font-weight: bolder;
+    font-family: cursive;
+    font-size: 40px;
+    position: absolute;
+}
+
+.container p {
+    top: 25%;
+    color: white;
+    font-weight: bolder; 
+    font-family: cursive;
+    font-size: 25px;
+    position: absolute;
+} 
+
+.container div {
+    width: 25vw;
+    display: flex;
+    flex-direction: column;  
+    align-items: right;
+    gap: 10px;
+} 
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+    background-color: aliceblue;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
+button {
+    background-color: gold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    color: black;
+    border: none;
+    margin-top: 20px;
+    font-weight: bolder;
+}
+
+button:hover {
+    background-color:aquamarine;
+    cursor: pointer;
+}
